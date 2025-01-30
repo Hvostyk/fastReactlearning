@@ -1,0 +1,17 @@
+:root{
+    /* Переменные для цветов 
+        Использование:
+        background-color: var(--main-c)  */
+    --main-c: #ffffff;
+    --second-c: #b0b0b0;
+    /*--main-c-d: #0C0032;
+    --second-c-d: #1B1F3C;
+    */
+    --black-c: #000000;
+    --white-c: #ffffff;
+    --light-c: #808080;
+    --accent-c1: #3405c3;
+    --accent-c2: #6018bd;
+    --accent-c3: #c834b4;
+    
+}

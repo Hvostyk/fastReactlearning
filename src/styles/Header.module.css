@@ -1,0 +1,310 @@
+body{
+    background-color: #0C0032;
+}
+
+.header {
+    position: relative;
+    display: block;
+    position: fixed;
+}
+.header_cover {
+    position: fixed;
+    left: 15px;
+    right:15px;
+    top:0px;
+    display: flex;
+    height: 62px;
+    align-items: center;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(136,0,148,1) 0%, rgba(20,132,161,1) 100%);
+    box-shadow: 0px 4px 2px black;
+}
+.header_logo {
+    display: block;
+    padding-left:10px ;
+    height: 100%;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+    border:solid 1px;
+    overflow: hidden;
+}
+
+.burger_button{
+    display: none;
+}
+
+.header_logo img{
+    width: 195px;
+    height: 70px;
+}
+
+.header_list {
+    align-items: center;
+}
+.header_list_strings {
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.header_list_strings li{
+    display: flex;
+    padding: 0 5px;
+    margin: 0 50px;
+    
+}
+
+
+.header_list_strings li button{
+    height: 40px;
+    justify-content: center;
+    font-weight:bold;
+    font-size: 15px;
+    align-items:center;
+    background-color: #C834B4;
+    color: #000;
+    border-radius:17px ;
+}
+
+.header_list_strings li button:hover{
+    width:125px;
+    transition: 0.5s;
+}
+
+.catalog button{
+    width:125px;
+}
+
+.contact button{
+    width:70px
+}
+
+.header_input{
+    margin-left: auto;
+}
+
+.header_input ul{
+    display: flex;
+}
+
+
+.bag{
+    padding-right: 15px;
+}
+
+.header_input ul:first-child button{
+    height: 40px;
+    width:50px;
+    justify-content: center;
+    font-weight:bold;
+    font-size: 15px;
+    align-items:center;
+    background-color: #0c0b0b;
+    color: #000;
+    border-radius:17px ;
+    
+}
+
+.header_input ul:first-child button:hover{
+    background-color: #161111;
+    transition: 0.5s;
+}
+
+.header_input input{
+    margin: auto;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 20.5px;
+    width:200.55px;
+    height:40px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(56,57,56,1) 0%, rgba(76,78,76,1) 76%);
+    color: white;
+    border-radius: 7px;
+}
+
+::placeholder{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+    color: white;
+    text-align:end;
+    background:url(../public/images/search.png) no-repeat 7px 1px;
+    color: #918d8d;
+}
+
+.header_buttons {
+    display: flex;
+    margin-left: 30px;
+    align-items: center;
+}
+
+.header_buttons_cover {
+    display: flex;
+}
+.SIN {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 10px;
+}
+
+.SIN button{
+    font-weight: bold;
+    font-size: 17.83px;
+    line-height: 27px;
+    width: 121.49px;
+    height: 62.66px;
+    background-color: #C834B4;
+    border-radius: 17.83px;
+    background-color: #C834B4;
+}
+
+.SUP {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+}
+
+.SUP button{
+    width: 100.49px;
+    height: 35.66px;
+    font-weight: bold;
+
+    border-radius: 17.83px;
+    font-size: 13.83px;
+    line-height: 20px;
+    color: #918d8d;
+    background-color: #0c0b0b;
+}
+
+.SIN button:hover{
+    background-color: #9939f4;
+    transition: 0.5s;
+}
+
+@media(width<1220px){
+    .closeburgermenu{
+        position: relative;
+        display: flex;
+        background: rgb(2,0,36);
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(136,0,148,1) 0%, rgba(20,132,161,1) 100%);
+        height: 100%;
+        width:400px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        transform:translateY(-100vh);
+        transition:all 0.8s;
+    }
+
+    .header_logo {
+        position: absolute;
+        top: 0px;
+        padding-left:10px ;
+        width: 200px;
+        height: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+        border:none;
+    }
+
+    .openburgermenu{
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        height: 100vh;
+        width:400px;
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(136,0,148,1) 0%, rgba(20,132,161,1) 100%);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: 0.8s;
+    }
+    .header_list ul{
+        position: absolute;
+        display: flex;
+        left: 61.25px;
+        top: 250px;
+        flex-direction: column;
+    }
+
+    .header_input{
+        position: absolute;
+        top: 100px;
+        display: flex;
+        margin: auto;
+    }
+
+    .header_buttons{
+        position: absolute;
+        top: 550px;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .header_buttons_cover.SIN{
+        padding-right: 0px;
+    }
+
+    .header_list_strings li{
+        padding:15px;
+    }
+
+    .contact button{
+        width:125px
+    }
+    .closeburger{
+        position: relative;
+        display: flex;
+        height: 50px;
+        width: 50px;
+        border-radius:50%;
+        background: rgb(2,0,36);
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(136,0,148,1) 0%, rgba(20,132,161,1) 100%);
+        transition: 0.8s;
+        align-items: center;
+        justify-content: center;
+        transition:0.8s;
+    }
+
+    .openburger{
+        background: none;
+    }
+
+    .burger_button{
+        position: absolute;
+        top: 16px;
+        left: -3px;
+        display: block;
+        padding:0 15px;
+        z-index: 5;
+    }
+
+    .burger_button span{
+        content: "";
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: #000;
+        margin: 4px 0;
+        border-radius:4px;
+    }
+
+    .burger_button::after,
+    .burger_button::before{
+        content: "";
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: #000;
+        border-radius:4px;
+    }   
+}

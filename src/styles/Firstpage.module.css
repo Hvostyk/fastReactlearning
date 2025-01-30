@@ -1,0 +1,71 @@
+@import "./vars.css";
+
+.home-page{
+    display:flex;
+    padding: 15px;
+    height:100vh;
+    background: rgb(21,0,66);
+    background: linear-gradient(0deg, rgba(21,0,66,1) 5%, rgba(167,82,255,1) 50%, rgba(34,0,100,1) 95%);
+}
+
+.image-container{
+    display: flex;
+    margin: auto 0;
+}
+
+.home-page-image{
+    max-height: 75vh;
+}
+
+.hero-text{
+    margin: auto;
+    max-width:568px; 
+    max-height: 600px;
+}
+
+.over1000{
+    color: white;
+    font-size:15px;
+    font-weight:300;
+}
+
+.heading{
+    color:var(--black-c);
+    margin-top:18px;
+    font-size:58px;/* в оригинале 75, но у нас текста больше*/
+    font-weight:600;
+    line-height:120%;
+}
+.help-info{
+    margin-top:16px;
+    font-weight:400;
+    font-size:18px;
+    line-height:28px;
+    color: white;
+}
+.marked-word{
+    color: var(--accent-c1);
+}
+.hero-buttons{
+    margin-top:53px;
+}
+
+.to-drinks-button{
+    border-radius:12.41px;
+    width:156px;
+    height:59px;
+    border-width:1.5px;
+    font-size:16.27px;
+    color:var(--white-c);
+    background-color: var(--accent-c1);
+    border-color: var(--accent-c1);
+}
+.second-button{
+    background-color: var(--white-c);
+    border-color:var(--accent-c1);
+    border-width: 1.5px;
+    border-radius:12.41px;
+    margin-left:15px;
+    width:110px;
+    height:59px;
+}
